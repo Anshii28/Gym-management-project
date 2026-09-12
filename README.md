@@ -1,5 +1,5 @@
-# Gym-management-project
-# 🏋️ Iron Fitness Gym Management System
+# 🏋️Gym-management-project
+ 
 
 A complete Gym Management Web Application built using Python Flask to manage members, trainers, and membership plans efficiently.
 

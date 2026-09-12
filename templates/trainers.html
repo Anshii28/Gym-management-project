@@ -1,0 +1,7 @@
+<!DOCTYPE html><html><head><style>
+body{margin:0;padding:20px 8%;color:white;font-family:Arial;background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=1374');background-size:cover;min-height:100vh}
+h1{color:#ffb703} .card{background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);padding:20px;border-radius:15px;border:1px solid #ffb703} a{color:#ffb703;text-decoration:none} li{margin:12px 0;font-size:18px}
+</style></head><body>
+<a href="/dashboard">← Dashboard</a><h1>Our Expert Trainers 💪</h1>
+<div class="card"><ul>{% for t in trainers %}<li>🔥 {{ t['name'] }} - {{ t['specialty'] }}</li>{% endfor %}</ul></div>
+</body></html>    

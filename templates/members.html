@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Members</title>
+<style>
+body{
+ margin:0; padding:20px 8%; color:white; font-family:Arial;
+ background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1470');
+ background-size: cover; background-attachment: fixed; min-height:100vh;
+}
+h1{color:#ffb703} a{color:#ffb703; text-decoration:none}
+.card{background:rgba(255,255,255,0.1); backdrop-filter:blur(10px); padding:20px; border-radius:15px; border:1px solid #ffb703; margin-top:20px}
+input, select{padding:10px; margin:5px; border-radius:8px; border:none; width:200px}
+button{padding:10px 20px; background:#ffb703; border:none; border-radius:8px; font-weight:bold; cursor:pointer}
+li{margin:12px 0; list-style:none; background:rgba(0,0,0,0.5); padding:10px; border-radius:8px}
+</style>
+</head>
+<body>
+<a href="/dashboard">← Dashboard</a>
+<h1>Members List 💪</h1>
+
+<div class="card">
+<h3>Add New Member</h3>
+<form action="/add_member" method="post">
+<input type="text" name="name" placeholder="Name" required>
+<input type="text" name="phone" placeholder="Phone" required>
+<select name="plan"><option>Basic</option><option>Premium</option><option>VIP</option></select>
+<select name="trainer"><option>Rahul</option><option>Aman</option><option>Neha</option></select>
+<button type="submit">Add</button>
+</form>
+</div>
+
+<div class="card">
+<ul>
+{% for m in members %}
+<li> 👤 {{ m['name'] }} | 📞 {{ m['phone'] }} <br><small>Plan: {{ m['plan'] }} - Trainer: {{ m['trainer'] }}</small> 
+<a href="/delete_member/{{ m['id'] }}" style="color:#ff4444; margin-left:15px; font-weight:bold;">[ Delete ❌ ]</a>
+</li>
+{% else %}
+<li>No members yet</li>
+{% endfor %}
+</ul>
+</div>
+</body>
+</html>            

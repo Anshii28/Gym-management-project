@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gym Management System</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.75),
+                rgba(0, 0, 0, 0.9)),
+                url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1920&q=80");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ffb703;
+        }
+
+        .logo span {
+            color: white;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffb703;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #ffb703;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #ddd;
+            max-width: 650px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            background: #ffb703;
+            color: black;
+            border: none;
+            border-radius: 30px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 183, 3, 0.5);
+        }
+
+        .features {
+            padding: 60px 8%;
+            background: rgba(0, 0, 0, 0.85);
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 38px;
+            margin-bottom: 40px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 183, 3, 0.15);
+            border-color: #ffb703;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .card h3 {
+            color: #ffb703;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #ddd;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+            color: #aaa;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">FIT<span>ZONE</span></div>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="/dashboard">dashboard</a>
+            <a href="#">Members</a>
+            <a href="#">Trainers</a>
+            <a href="#">Plans</a>
+            <a href="#">Payments</a>
+        </div>
+    </nav>
+
+
+    <section class="hero">
+
+        <h1>BUILD A <span>STRONGER</span> YOU</h1>
+
+        <p>
+            Manage your gym members, trainers, membership plans
+            and payments easily with our modern Gym Management System.
+        </p>
+    <a href="/dashboard"style="text-decoration:none">
+        <button class="btn">Explore Dashboard</button>
+    </a>
+
+    </section>
+
+
+    <section class="features">
+
+        <h2>Gym Management Features</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>👥 Members</h3>
+                <p>Manage gym members and their membership details easily.</p>
+            </div>
+
+            <div class="card">
+                <h3>🏋️ Trainers</h3>
+                <p>Manage trainers and their specializations.</p>
+            </div>
+
+            <div class="card">
+                <h3>💳 Membership Plans</h3>
+                <p>View Monthly, Quarterly and Yearly membership plans.</p>
+            </div>
+
+            <div class="card">
+                <h3>💰 Payments</h3>
+                <p>Track and manage all gym payment records.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 FITZONE | Gym Management System</p>
+    </footer>
+
+</body>
+</html>                

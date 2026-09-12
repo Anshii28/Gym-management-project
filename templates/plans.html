@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+ margin:0; padding:20px 8%; color:white; font-family:Arial;
+ background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470');
+ background-size: cover; background-attachment: fixed; min-height:100vh;
+}
+h1{color:#ffb703} a{color:#ffb703; text-decoration:none}
+.card{background:rgba(255,255,255,0.1); backdrop-filter:blur(10px); padding:20px; border-radius:15px; border:1px solid #ffb703}
+li{margin:15px 0; font-size:18px; background:rgba(0,0,0,0.5); padding:15px; border-radius:10px; list-style:none}
+</style>
+</head>
+<body>
+<a href="/dashboard">← Dashboard</a>
+<h1>Membership Plans 📋</h1>
+<div class="card">
+<ul>
+{% for p in plans %}
+<li>💎 <b>{{ p['name'] }}</b> - Price: ₹{{ p['price'] }} <br><small style="color:#ccc">{{ p['duration'] }} Days - {{ p['description'] }}</small></li>
+{% endfor %}
+</ul>
+</div>
+</body>
+</html>           

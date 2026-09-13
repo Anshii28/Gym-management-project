@@ -1,4 +1,4 @@
-🏋️ Gym Management System
+# 🏋️ Gym Management System
 
 A modern and user-friendly Gym Management System built using Python Flask, SQLite3, HTML, CSS, and JavaScript.
 

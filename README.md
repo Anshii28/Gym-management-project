@@ -4,29 +4,29 @@ A modern and user-friendly Gym Management System built using Python Flask, SQLit
 
 This project helps manage gym members, trainers, membership plans, and payments through a simple web-based dashboard.
 
-🌐 Live Demo
+## 🌐 Live Demo
 
 Live Website:
 https://kunj.pythonanywhere.com
 
 «Note: The live demo is hosted on PythonAnywhere and may not remain available permanently.»
 
-📸 Features
+## 📸 Features
 
-🏠 Home Page
+## 🏠 Home Page
 
 - Clean and modern gym-themed landing page
 - Introduction to the Gym Management System
 - Easy navigation to different sections
 
-📊 Dashboard
+## 📊 Dashboard
 
 - Total number of members
 - Total trainers
 - Available membership plans
 - Revenue overview
 
-👥 Member Management
+## 👥 Member Management
 
 - Add new gym members
 - Store member details
@@ -34,25 +34,25 @@ https://kunj.pythonanywhere.com
 - Assign trainers
 - Manage membership status
 
-🧑‍🏫 Trainer Management
+## 🧑‍🏫 Trainer Management
 
 - Add trainers
 - Store trainer specialization
 - View trainer information
 
-📋 Membership Plans
+## 📋 Membership Plans
 
 - Create and manage membership plans
 - Monthly, quarterly, yearly and other plans
 - Store plan duration and price
 
-💰 Payment Management
+## 💰 Payment Management
 
 - Record member payments
 - Store payment amount and date
 - View payment information
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 Technology| Purpose
 Python| Backend programming
@@ -62,7 +62,7 @@ HTML5| Website structure
 CSS3| Styling and UI
 JavaScript| Frontend interactions
 
-📁 Project Structure
+## 📁 Project Structure
 
 Gym-management-project/
 │
@@ -79,7 +79,7 @@ Gym-management-project/
 ├── .gitignore
 └── README.md
 
-⚙️ Installation & Setup
+## ⚙️ Installation & Setup
 
 1. Clone the repository
 
@@ -101,13 +101,13 @@ python app.py
 
 http://127.0.0.1:5000
 
-🗄️ Database
+## 🗄️ Database
 
 This project uses SQLite3, so no separate database server is required.
 
 The application can create and manage the required database locally, making the project simple to set up and run.
 
-🎯 Project Purpose
+## 🎯 Project Purpose
 
 The main purpose of this project is to create a simple digital solution for managing common gym operations such as:
 
@@ -119,7 +119,7 @@ The main purpose of this project is to create a simple digital solution for mana
 
 It was developed as a practical project to learn and demonstrate full-stack web development using Flask and SQLite3.
 
-🚀 Future Improvements
+## 🚀 Future Improvements
 
 Some features that can be added in future versions:
 
@@ -132,16 +132,16 @@ Some features that can be added in future versions:
 - 🧾 Payment receipts
 - ☁️ Permanent cloud deployment
 
-👩‍💻 Developer
+## 👩‍💻 Developer
 
 Anshu Sharma
 
 Aspiring Full Stack Web Developer
 
-🔗 GitHub
+## 🔗 GitHub
 
 https://github.com/Anshii28/Gym-management-project
 
 ---
 
-⭐ If you find this project useful, feel free to star the repository!
+# ⭐ If you find this project useful, feel free to star the repository!
